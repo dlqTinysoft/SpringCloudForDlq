@@ -6,7 +6,39 @@
 
     <groupId>SpringClouldForDlq</groupId>
     <artifactId>SpringClouldForDlq</artifactId>
+    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>Order</module>
+        <module>Eureka</module>
+        <module>Member</module>
+    </modules>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.0.1.RELEASE</version>
+    </parent>
+    <!-- 管理依赖SpringCloud依赖，就是把所有的SpringCloud相关组件的版本保持一致 -->
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>Finchley.M7</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+
+
+
+
+
+
+
+
 
 
 </project>

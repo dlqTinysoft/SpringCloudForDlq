@@ -1,0 +1,6 @@
+======SpringCloud学习==============================
+
+Spring的注册中心Eureka的学习
+    1.第一坑： 注意SpringBootApplication的扫描范围，有些Controller没有扫描进来，所以报404访问不到呀
+    2.注意打包的时候，配置文件有没有打包进去，检查target目录
+    3.@LoadBalanced 该注解，开启本地负载均衡。
